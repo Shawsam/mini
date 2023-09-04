@@ -1,11 +1,10 @@
 .container{
   padding:0 30rpx;
-  .desp{ color: #999;}
   .top{
     display: flex;
-    padding:15rpx 0;
-    line-height: 60rpx;
-    height: 60rpx;
+    padding:30rpx 0;
+    line-height: 70rpx;
+    height: 70rpx;
     .addr{
       flex: 1;
       display: flex;
@@ -13,19 +12,28 @@
       .img{
         width:20px;
         height: 20px;
-        margin-right: 10px;
+        margin-right: 6px;
       }
     }
     .search{
-      width: 300rpx;
+      width: 350rpx;
       flex: none;
       border:1rpx solid #e8e8e8;
       border-radius: 30rpx;
       padding:0 20rpx;
       box-sizing: border-box;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      .img{
+        width:25px;
+        height: 25px;
+        margin-right: 10px;
+      }
       input{
-        line-height: 58rpx;
-        height: 58rpx;
+        line-height: 68rpx;
+        height: 68rpx;
       }
     }
   }
@@ -49,6 +57,7 @@
     padding:15rpx;
     display: flex;
     align-items: center;
+    color:#333;
     .img{
       width: 100px;
       flex: none;
@@ -64,12 +73,13 @@
     margin-bottom: 30rpx;
     background:#fff;
     border-radius: 15rpx;
-    padding:30rpx 15rpx;
+    padding:30rpx;
     .tab{
       display: flex;
       .item{
         flex: 1;
         text-align: center;
+        font-weight: bold;
         &.active{
           color:rgba(33, 181, 121, 1);
         }
@@ -78,7 +88,7 @@
     .content{
       padding:30rpx 0;
       .opts{
-        margin:20rpx 0;
+        margin:30rpx 0;
         .item{
           display:inline-block;
           margin-right: 40rpx;
@@ -87,6 +97,7 @@
           background:rgba(248, 249, 250, 1);
           border-radius: 60rpx;
           padding:0 20rpx;
+          color:#333333;
           &.active{
             background:rgba(33, 181, 121, 1);
             color: #fff;
@@ -96,9 +107,8 @@
     }
     .tit{
       border-right: 1rpx solid #e8e8e8;
-      padding:0 15rpx;
       margin-right: 15rpx;
-      font-size: 34rpx;
+      font-weight: bold;
     }
     .text{
       color: #999;
@@ -106,14 +116,19 @@
   }
 
   .list{
-     background: #fff;
+    margin:0 -15rpx;
     .item{
       display: inline-block;
       width: 50%;
-      padding:30rpx;
+      padding:15rpx;
       box-sizing: border-box;
       line-height: 50rpx;
       position: relative;
+      .con{
+        background: #fff;
+        padding:30rpx 15rpx;
+        border-radius: 10rpx;
+      }
       image{
         width:100%;
       }
@@ -127,7 +142,7 @@
         height:60rpx;
         width: 60rpx;
         position:absolute;
-        bottom:30rpx;
+        bottom:40rpx;
         right:30rpx;
       }
     }

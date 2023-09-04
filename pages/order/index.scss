@@ -1,0 +1,133 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.top{
+  padding:30rpx;
+  box-sizing: border-box;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  text{
+    display: flex;
+    align-items: center;
+    .img{
+      width:16px;
+      height: 16px;
+      margin-left: 5px;
+    }
+    font-size: 28rpx;
+    margin-left: 40rpx;
+  }
+}
+
+.search{
+  flex: 1;
+  text-align: center;
+  border:1rpx solid #e8e8e8;
+  background: #F8F9FA;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 40rpx;
+  padding:0 30rpx;
+  display: flex;
+  align-items: center;
+  .img{
+    width:25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  input{
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+.tabs{
+  flex: 0;
+  display: flex;
+  padding: 10rpx 0;
+  background: #fff;
+  .item{
+    flex: 1;
+    height: 80rpx;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+}
+.list{
+  flex: 1;
+  overflow-y: scroll;
+  background: #F7F7F8;
+  padding:30rpx;
+  box-sizing: border-box;
+  .item{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 10rpx;
+    margin-bottom: 30rpx;
+    .state{
+        color: #F55726;
+    }
+    .top{
+      display: flex;
+      justify-content: space-between;
+      padding: 25rpx 0;
+      border-bottom: 1rpx solid #e8e8e8;
+    }
+    .title{
+      padding:40rpx 0 0 0;
+    }
+    .info{
+      position: relative;
+      display: flex;
+      padding:40rpx 0;
+      image{
+        width: 130rpx;
+        height: 130rpx;
+      }
+      .con{
+        flex: 1;
+        padding:20rpx;
+        .p{
+          margin-bottom: 20rpx;
+        }
+        .service{
+          text-align: right;
+        }
+        .stage{
+          text-align: right;
+        }
+      }
+    }
+    .bot{
+      padding:20rpx 0 40rpx 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .btn{
+        height: 60rpx;
+        line-height: 60rpx;
+        text-align: center;
+        border-radius: 30rpx;
+        background-color: #F55726;
+        color: #fff;
+        padding:0 20rpx;
+      }
+      .cancel{
+        background-color: #F8F9FA;
+        color: #333;
+      }
+    }
+    .time{
+      color: #999;
+    }
+  }
+}

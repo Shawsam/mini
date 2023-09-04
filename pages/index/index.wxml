@@ -2,6 +2,7 @@
     <view class="top">
         <view class="addr"> <image class="img" mode="widthFix" src="../../images/addr.png" />天心区唐家湾巷39号</view>
         <view class="search">
+            <image class="img" mode="widthFix" src="../../images/search.png" />
             <input placeholder="请输入搜索内容" />
         </view>
     </view>
@@ -44,20 +45,34 @@
         </view>
     </view>
     <view class="filter">
-        <view class="trigger"><Text class="tit">筛选装修户型</Text><Text class="text">精准为您展示所选社区户型</Text></view>
+        <view class="trigger"><Text class="tit">筛选装修户型</Text><Text class="text">精准为您展示所选社区户型</Text>
+           <Text class="desp"><image src="../../images/arrow.png" /></Text>
+        </view>
     </view>
     <view class="list">
       <view class="item">
-        <image mode="widthFix" src="../../images/1.png"></image>
-        <view class="name">奉贤阳光社区四室三厅150㎡户型</view>
-        <view><Text class="price">￥100</Text> /起</view>
-        <image class="cart" src="../../images/cart.png" />
+        <view class="con">
+            <image mode="widthFix" src="../../images/1.png"></image>
+            <view class="name">奉贤阳光社区四室三厅150㎡户型</view>
+            <view><Text class="price">￥100</Text> /起</view>
+            <image class="cart" src="../../images/cart.png" />
+        </view>
       </view>
       <view class="item">
-        <image mode="widthFix" src="../../images/1.png"></image>
-        <view class="name">奉贤阳光社区四室三厅150㎡户型</view>
-        <view><Text class="price">￥100</Text> /起</view>
-        <image class="cart" src="../../images/cart.png" />
+          <view class="con">
+            <image mode="widthFix" src="../../images/1.png"></image>
+            <view class="name">奉贤阳光社区四室三厅150㎡户型</view>
+            <view><Text class="price">￥100</Text> /起</view>
+            <image class="cart" src="../../images/cart.png" />
+        </view>
+      </view>
+      <view class="item">
+          <view class="con">
+            <image mode="widthFix" src="../../images/1.png"></image>
+            <view class="name">奉贤阳光社区四室三厅150㎡户型</view>
+            <view><Text class="price">￥100</Text> /起</view>
+            <image class="cart" src="../../images/cart.png" />
+        </view>
       </view>
     </view>
 </view>

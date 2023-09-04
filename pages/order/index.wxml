@@ -1,3 +1,40 @@
-<view class="container">
- <view>订单</view>
-</view>
+  <view class="container">
+    <view class="top">
+      <view class="search">
+        <image class="img" mode="widthFix" src="../../images/search.png" />
+        <input placeholder="请输入搜索订单" />
+      </view>
+      <Text>全部订单<image class="img" mode="widthFix" src="../../images/arrowDown.png" /></Text>
+    </view>
+    <view class="tabs">
+      <view class="item">全部</view>
+      <view class="item">待分配</view>
+      <view class="item">进行中</view>
+      <view class="item">待确认</view>
+      <view class="item">已完成</view>
+    </view>
+    <view class="list">
+      <!-- 订单列表 -->
+      <view class="item">
+        <view class="top">
+          <Text>订单号：12345678910</Text>
+          <Text>待分配</Text>
+        </view>    
+        <view class="title">奉贤阳光社区四室三厅150m户型</view>
+          <view class="info">
+            <image src="../../images/1.png" />
+            <view class="con">
+              <view class="p">泥瓦</view>
+              <view class="p service">铜牌服务</view>
+              <view class="p stage"><Text class="state">阶段一：</Text>已支付</view>
+            </view>
+          </view>
+          <view class="bot">
+            <Text class="time">2023/07/16 12:23</Text>
+            <Text class="btn cancel">取消订单</Text>
+            <Text class="btn">装修日记</Text>
+          </view>
+      </view>
+    </view>
+    
+  </view>

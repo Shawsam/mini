@@ -1,0 +1,106 @@
+.banner {
+  width: 100%;
+}
+.info{
+  margin:30rpx;
+  padding:30rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  line-height: 70rpx;
+  color: #666666;
+  .price{
+    color:#F55726;
+  }
+  .del{
+    text-decoration: line-through;
+    margin-left: 30rpx;
+    color: #ccc;
+  }
+  .p{
+    font-weight:bold;
+    font-size: 30rpx;
+    line-height: 60rpx;
+  }
+  .flex{
+    justify-content: space-between;
+  }
+  .tag{
+    background: #21B579;
+    color:#fff;
+    padding:2rpx 8rpx;
+    border-radius: 5rpx;
+    margin-right: 15rpx;
+  }
+}
+
+.select{
+  margin:30rpx;
+  padding:30rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  .arrow{
+    float: right;
+  }
+  .text{
+    color:#21B579;
+    margin-left: 20rpx;
+  }
+}
+
+.intro{
+  padding:0 30rpx;
+  background: #fff;
+  .tabs{
+    padding:20rpx 0;
+    justify-content: space-around;
+    .item{
+      text-align: center;
+      line-height: 80rpx;
+      &.active{
+        border-bottom: 2px solid #21B579;
+      }
+    }
+  }
+  image{
+    border-radius: 20rpx;
+  }
+}
+
+
+.container{
+  padding-bottom: 100rpx;
+  .footer{
+    position: fixed;
+    bottom:0;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 50rpx;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    .contact{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 100rpx;
+      margin-right: 40rpx;
+      image{
+        display: block;
+        height: 30rpx;
+        width: 30rpx;
+      }
+      font-size: 20rpx;
+    }
+    .btn{
+      text-align: center;
+      height: 80rpx;
+      line-height: 80rpx;
+      background: #21B579;
+      color: #fff;
+      border-radius: 40rpx;
+      flex: 1;
+    }
+  }
+}

@@ -1,3 +1,32 @@
 <view class="container">
- <view>保修</view>
+    <image class="banner" mode="widthFix" src="../../images/ban.png" />
+    <view class="info">
+        <view class="flex">
+            <view><Text class="price"> ￥60 </Text>/起 <Text class="del">￥80</Text> </view>
+            <view>已服务100户</view>
+        </view>
+        <view class="p">竣工保修</view>
+        <view class="p">施工后延长保修日期，居住更安心</view>
+        <view><Text class="tag">金牌服务</Text> 质量保证售后无忧</view>
+    </view>
+    <view class="select">
+       已选<Text class="text">金牌服务，3个月</Text>
+      <Text class="desp"><image src="../../images/arrow.png" /></Text>
+    </view>
+    <view class="intro">
+       <view class="tabs flex">
+          <view class="item active">服务详情</view>
+          <view class="item">热门户型</view>
+       </view>
+       <view class="imgs">
+          <image class="banner" mode="widthFix" src="../../images/intro.png" />
+       </view>
+    </view>
+    <View class="footer">
+      <view class="contact">
+         <image src="../../images/contact.png" />
+         <view>联系客服</view>
+      </view>
+      <view class="btn">立即购买</view>
+    </View>
 </view>

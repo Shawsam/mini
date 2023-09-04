@@ -1,0 +1,21 @@
+/**app.wxss**/
+.container {
+  min-height: 100vh;
+  background: rgba(247, 247, 248, 1);
+} 
+
+.flex{
+  display: flex;
+}
+
+.desp{ 
+  color: #999; 
+  float: right;
+  display: flex;
+  align-items: center;
+  image{
+    display: inline-block;
+    height: 30rpx;
+    width: 30rpx;
+  }
+}
