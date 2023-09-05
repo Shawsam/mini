@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 100vh;
 }
+
 .top{
   padding:30rpx;
   box-sizing: border-box;
@@ -59,75 +60,76 @@
     align-items: center;
   }
 }
-.list{
-  flex: 1;
+
+.main{
   overflow-y: scroll;
-  background: #F7F7F8;
-  padding:30rpx;
-  box-sizing: border-box;
-  .item{
-    display: flex;
-    flex-direction: column;
-    padding: 0 30rpx;
-    box-sizing: border-box;
+  flex: 1;
+  .tip{
+    height: 70rpx;
+    line-height: 70rpx;
     background: #fff;
-    border-radius: 10rpx;
-    margin-bottom: 30rpx;
-    .state{
-        color: #F55726;
-    }
-    .top{
-      display: flex;
-      justify-content: space-between;
-      padding: 25rpx 0;
-      border-bottom: 1rpx solid #e8e8e8;
-    }
+    padding:0 15px;
+  }
+  .history{
+    box-sizing: border-box;
+    height: 100%;
+    background: #fff;
+    padding: 30rpx;
     .title{
-      padding:40rpx 0 0 0;
-    }
-    .info{
-      position: relative;
-      display: flex;
-      padding:40rpx 0;
-      image{
-        width: 130rpx;
-        height: 130rpx;
-      }
-      .con{
-        flex: 1;
-        padding:20rpx;
-        .p{
-          margin-bottom: 20rpx;
-        }
-        .service{
-          text-align: right;
-        }
-        .stage{
-          text-align: right;
-        }
-      }
-    }
-    .bot{
-      padding:20rpx 0 40rpx 0;
+      font-size: 36rpx;
+      color: #000;
+      padding: 30rpx;
+      font-weight: bold;
+      margin-bottom: 20rpx;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      .btn{
-        height: 60rpx;
-        line-height: 60rpx;
-        text-align: center;
-        border-radius: 30rpx;
-        background-color: #F55726;
-        color: #fff;
-        padding:0 20rpx;
-      }
-      .cancel{
-        background-color: #F8F9FA;
-        color: #333;
-      }
     }
-    .time{
-      color: #999;
+    .del{
+      display: inline-block;
+      width:40rpx!important;
+      height: 40rpx!important;
+    }
+  }
+
+  .listCon{
+    height: 100%
+  }
+
+  .list{
+    padding:30rpx;
+    margin:0 -15rpx;
+    box-sizing: border-box;
+    width: 100%;
+    .item{
+      display: inline-block;
+      width: 50%;
+      padding:15rpx;
+      box-sizing: border-box;
+      line-height: 50rpx;
+      position: relative;
+      .con{
+        background: #fff;
+        padding:30rpx 15rpx;
+        border-radius: 10rpx;
+      }
+      image{
+        width:100%;
+      }
+      .name{
+        margin-bottom:10px;
+      }
+      .price{
+        color:#F55726;
+      }
+      .cart{
+        height:60rpx;
+        width: 60rpx;
+        position:absolute;
+        bottom:40rpx;
+        right:30rpx;
+      }
     }
   }
 }
+

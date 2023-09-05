@@ -1,0 +1,74 @@
+  <view class="container">
+    <view class="top">
+      <view class="search">
+        <image class="img" mode="widthFix" src="../../images/search.png" />
+        <input bindinput="searchInput" placeholder="请输入搜索内容" />
+      </view>
+      <Text bindtap="backIndex">取消</Text>
+    </view>
+    <view class="main">
+      <view class="history" wx:if="{{keyword.length==0}}">
+        <view class="title">历史搜索<view class="desp"><image class="del" src="../../images/del.png"  /></view></view>
+        <view class="opts">
+          <view class="opt">招商海廷（五期）</view>
+          <view class="opt">逸时区</view>
+          <view class="opt">金碧苑</view>
+          <view class="opt">新建西路72号</view>
+        </view>
+      </view>
+
+      <view class="listCon" wx:else>
+          <view class="tip">关于“逸时区”共有5个户型</view>
+          <view class="list" wx:if="{{listData.length>0}}">
+            <view class="item">
+              <view class="con">
+                  <image mode="widthFix" src="../../images/1.png"></image>
+                  <view class="name">奉贤阳光社区四室三厅150㎡户型</view>
+                  <view><Text class="price">￥100</Text> /起</view>
+                  <image class="cart" src="../../images/cart.png" />
+              </view>
+            </view>
+            <view class="item">
+                <view class="con">
+                  <image mode="widthFix" src="../../images/1.png"></image>
+                  <view class="name">奉贤阳光社区四室三厅150㎡户型</view>
+                  <view><Text class="price">￥100</Text> /起</view>
+                  <image class="cart" src="../../images/cart.png" />
+              </view>
+            </view>
+            <view class="item">
+                <view class="con">
+                  <image mode="widthFix" src="../../images/1.png"></image>
+                  <view class="name">奉贤阳光社区四室三厅150㎡户型</view>
+                  <view><Text class="price">￥100</Text> /起</view>
+                  <image class="cart" src="../../images/cart.png" />
+              </view>
+            </view>
+            <view class="item">
+                <view class="con">
+                  <image mode="widthFix" src="../../images/1.png"></image>
+                  <view class="name">奉贤阳光社区四室三厅150㎡户型</view>
+                  <view><Text class="price">￥100</Text> /起</view>
+                  <image class="cart" src="../../images/cart.png" />
+              </view>
+            </view>
+            <view class="item">
+                <view class="con">
+                  <image mode="widthFix" src="../../images/1.png"></image>
+                  <view class="name">奉贤阳光社区四室三厅150㎡户型</view>
+                  <view><Text class="price">￥100</Text> /起</view>
+                  <image class="cart" src="../../images/cart.png" />
+              </view>
+            </view>
+          </view>
+          <view class="empty" wx:else>
+            <view>
+              <image  src="../../images/searchE.png" />
+              <view>
+                <Text>抱歉，没有找到相关户型</Text>
+              </view>
+            </view>
+          </view>
+      </view>
+    </view>
+  </view>

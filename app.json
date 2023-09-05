@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/service/index",
     "pages/order/index",
-    "pages/user/index"
+    "pages/user/index",
+    "pages/search/index",
+    "pages/productDetail/index"
   ],
   "tabBar": {
     "custom": false,

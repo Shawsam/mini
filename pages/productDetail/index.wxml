@@ -1,16 +1,19 @@
 <view class="container">
-    <image class="banner" mode="widthFix" src="../../images/ban.png" />
+    <view class="productImg">
+      <image class="banner" mode="widthFix" src="../../images/1.png" />
+      <image class="share" mode="widthFix" src="../../images/share.png" />
+    </view>
     <view class="info">
         <view class="flex">
             <view><Text class="price"> ￥60 </Text>/起 <Text class="del">￥80</Text> </view>
             <view>已服务100户</view>
         </view>
-        <view class="p">竣工保修</view>
-        <view class="p">施工后延长保修日期，居住更安心</view>
+        <view class="p">奉贤阳光社区四室三厅150㎡户型</view>
+        <view class="p">水电布线瓷砖补漆</view>
         <view><Text class="tag">金牌服务</Text> 质量保证售后无忧</view>
     </view>
     <view class="select"  data-bol="{{true}}" bindtap="filterShow">
-       已选<Text class="text">金牌服务，3个月</Text>
+       已选<Text class="text">金牌服务，泥瓦，砖墙</Text>
       <Text class="desp"><image src="../../images/arrow.png" /></Text>
     </view>
     <view class="intro">
@@ -39,13 +42,14 @@
                 <view class="title">选择规格</view>
             </view>
             <view class="content">
-                <view class="title">保修时间</view>
+                <view class="title">服务项目(多选)</view>
                 <view class="opts">
-                    <view class="opt active">3个月</view>
-                    <view class="opt">6个月</view>
-                    <view class="opt">9个月</view>
-                    <view class="opt">12个月</view>
-                    <view class="opt">24个月</view>
+                    <view class="opt active">水电</view>
+                    <view class="opt">贴瓷砖</view>
+                    <view class="opt">玻璃安装</view>
+                    <view class="opt">漏水处理</view>
+                    <view class="opt">地板维修</view>
+                    <view class="opt">重新布线</view>
                 </view>          
 
                 <view class="title">服务等级</view>

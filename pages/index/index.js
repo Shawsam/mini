@@ -20,5 +20,10 @@ Page({
     this.setData({
       panelShow:e.currentTarget.dataset.bol
     })
+  },
+  openSearch(){
+    wx.navigateTo({
+      url: '/pages/search/index',
+    })
   }
 })

@@ -18,11 +18,11 @@
     .search{
       width: 350rpx;
       flex: none;
-      border:1rpx solid #e8e8e8;
       border-radius: 30rpx;
       padding:0 20rpx;
       box-sizing: border-box;
       background: #fff;
+      color: #999;
       display: flex;
       align-items: center;
       justify-content: start;
@@ -87,22 +87,8 @@
     }
     .content{
       padding:30rpx 0;
-      .opts{
-        margin:30rpx 0;
-        .item{
-          display:inline-block;
-          margin-right: 40rpx;
-          height: 60rpx;
-          line-height: 60rpx;
-          background:rgba(248, 249, 250, 1);
-          border-radius: 60rpx;
-          padding:0 20rpx;
-          color:#333333;
-          &.active{
-            background:rgba(33, 181, 121, 1);
-            color: #fff;
-          }
-        }
+      .cate{
+        padding:30rpx 0;
       }
     }
     .tit{
