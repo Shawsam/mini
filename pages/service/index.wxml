@@ -9,7 +9,7 @@
         <view class="p">施工后延长保修日期，居住更安心</view>
         <view><Text class="tag">金牌服务</Text> 质量保证售后无忧</view>
     </view>
-    <view class="select">
+    <view class="select"  data-bol="{{true}}" bindtap="filterShow">
        已选<Text class="text">金牌服务，3个月</Text>
       <Text class="desp"><image src="../../images/arrow.png" /></Text>
     </view>
@@ -29,4 +29,38 @@
       </view>
       <view class="btn">立即购买</view>
     </View>
+
+    
+    <view class="modal" catchtouchmove="true" wx:if="{{panelShow}}">
+        <view class="shade"></view>
+        <view class="panel">
+            <image class="close" src="../../images/close.png" data-bol="{{false}}" bindtap="filterShow" />
+            <view class="head">
+                <view class="title">选择规格</view>
+            </view>
+            <view class="content">
+                <view class="title">服务项目(多选)</view>
+                <view class="opts">
+                    <view class="opt active">水电</view>
+                    <view class="opt">贴瓷砖</view>
+                    <view class="opt">玻璃安装</view>
+                    <view class="opt">漏水处理</view>
+                    <view class="opt">地板维修</view>
+                    <view class="opt">重新布线</view>
+                </view>          
+
+                <view class="title">服务等级</view>
+                <view class="opts">
+                    <view class="opt active">金牌服务</view>
+                    <view class="opt">银牌服务</view>
+                    <view class="opt">铜牌服务</view>
+                </view>          
+
+                <view class="title">预估费用 <view class="desp"><Text class="price">￥300</Text></view>  </view>
+            </view>
+            <view class="foot">
+                <view class="btn">提交订单</view>
+            </view>
+        </view>
+    </view>
 </view>

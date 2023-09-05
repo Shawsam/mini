@@ -104,3 +104,32 @@
     }
   }
 }
+
+
+.panel{
+  .content{
+    .title{
+      text-align: left;
+      .price{
+        font-size: 40rpx;
+      }
+    }
+  }
+  .opts{
+    .opt{
+      display: inline-block;
+      background: #F8F9FA;
+      color: #333;
+      height: 60rpx;
+      line-height: 60rpx;
+      border-radius: 30rpx;
+      margin-right: 40rpx;
+      margin-bottom: 20rpx;
+      padding:0 30rpx;
+      &.active{
+        color: #fff;
+        background: #21B579;
+      }
+    }
+  }
+}

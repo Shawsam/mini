@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    panelShow:false,
     indicatorDots: true, // 是否显示指示点
     autoplay: true, // 是否自动切换
     interval: 3000, // 自动切换时间间隔，单位为ms
@@ -14,5 +15,10 @@ Page({
   },
   onLoad() {
 
+  },
+  filterShow(e){
+    this.setData({
+      panelShow:e.currentTarget.dataset.bol
+    })
   }
 })

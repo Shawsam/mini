@@ -29,7 +29,7 @@
             <view>
                 <view>居室</view>
                 <view class="opts">
-                    <view class="item">一居室</view>
+                    <view class="item active">一居室</view>
                     <view class="item">二居室</view>
                     <view class="item">三居室</view>
                 </view>
@@ -45,7 +45,7 @@
         </view>
     </view>
     <view class="filter">
-        <view class="trigger"><Text class="tit">筛选装修户型</Text><Text class="text">精准为您展示所选社区户型</Text>
+        <view class="trigger"  data-bol="{{true}}"  bindtap="filterShow"><Text class="tit">筛选装修户型</Text><Text class="text">精准为您展示所选社区户型</Text>
            <Text class="desp"><image src="../../images/arrow.png" /></Text>
         </view>
     </view>
@@ -74,5 +74,32 @@
             <image class="cart" src="../../images/cart.png" />
         </view>
       </view>
+    </view>
+
+    <view class="modal" catchtouchmove="true" wx:if="{{panelShow}}">
+        <view class="shade"></view>
+        <view class="panel">
+            <image class="close" src="../../images/close.png" data-bol="{{false}}" bindtap="filterShow" />
+            <view class="head">
+                <view class="title">社区信息</view>
+            </view>
+            <view class="content">
+                <view class="item">
+                    城市<Text class="desp">上海</Text>
+                </view>
+                <view class="item">
+                    地区/镇<Text class="desp">奉贤</Text>
+                </view>
+                <view class="item">
+                    地址<Text class="desp"><input placeholder="详情填写*" /></Text>
+                </view>
+                <view class="item">
+                    社区名称<Text class="desp"><input placeholder="详情填写*" /></Text>
+                </view>            
+            </view>
+            <view class="foot">
+                <view class="btn">确认</view>
+            </view>
+        </view>
     </view>
 </view>
