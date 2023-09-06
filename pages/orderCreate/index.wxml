@@ -29,11 +29,11 @@
     </view>
     <view class="con remark">
       订单备注
-      <view class="desp">备注内容详情填写</view>
+      <view class="desp">备注内容详情填写<image src="../../images/arrow.png" /></view>
     </view>
     <view class="con">
       服务协议
-      <view class="desp">购买视为同意《服务协议》<image src="../../images/arrow.png" /></view>
+      <view class="desp">购买视为同意《服务协议》<image src="../../images/selected.png" /></view>
     </view>
     <view class="footer">
       <view>阶段一：<text class="price">￥240</text></view>

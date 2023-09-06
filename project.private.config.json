@@ -9,6 +9,20 @@
             "list": [
                 {
                     "name": "",
+                    "pathName": "pages/orderResult/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/orderRemark/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
                     "pathName": "pages/orderCreate/index",
                     "query": "",
                     "launchMode": "default",
