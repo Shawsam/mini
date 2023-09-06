@@ -1,8 +1,30 @@
 
 .container{  
   box-sizing: border-box;
-  padding:40rpx;
   padding-bottom: 100rpx;
+  .top{
+    height: 380rpx;
+    background: #21B579;
+    border-radius: 0 0 30rpx 30rpx;
+    text-align: center;
+    color: #fff;
+    .tit{
+      padding-top:100rpx;
+      margin-bottom: 30rpx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .clock{
+      width: 50rpx;
+      height: 50rpx;
+      margin-right: 30rpx;
+    }
+  }
+  .main{
+    margin-top:-100rpx;
+    padding:0 40rpx;
+  }
   .con{
     background: #fff;
     position: relative;
@@ -73,7 +95,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:0 50rpx;
+    padding:0 50rpx 0 200rpx;
     width: 100%;
     box-sizing: border-box;
     background: #fff;
@@ -91,6 +113,7 @@
       font-size: 20rpx;
     }
     .btn{
+      margin-left: 50rpx;
       text-align: center;
       height: 80rpx;
       line-height: 80rpx;
@@ -98,6 +121,16 @@
       color: #fff;
       border-radius: 40rpx;
       flex: 1;
+    } 
+    .decorate{
+      background: #F55726;
+    }
+    .cancel{
+      background-color: #F8F9FA;
+      color: #333;
+    }
+    .complete{
+      background-color: #ccc;
     }
   }
 }

@@ -1,0 +1,33 @@
+  <view class="container">
+    <view class="con">
+      <view class="top">2023.07.01<Text class="desp">阶段一</Text></view>
+      <view class="content">
+        <view class="text">这篇实际在去年就写完了，以前买的房子有一些装
+        修（开发商基本装修完毕，除了灶台》，但是这套
+        毛还从头到位的装修流程跑完很费劲，而且装修中
+        间踩过了一些坑，对于即将装修，或者未来即将装
+        修的小伙伴或许有一些参考意义，因为很多人即便
+        不买房，几年后也会重新装修，本文算是基础核心
+        的装修整理，大部分装修八九不离十。</view>
+        <view class="imgs">
+          <view class="img">
+            <image mode="widthFix" src="../../images/1.png" />
+          </view>
+          <view class="img">
+            <image mode="widthFix" src="../../images/1.png" />
+          </view>
+          <view class="img">
+            <image mode="widthFix" src="../../images/1.png" />
+          </view>
+          <view class="img">
+            <image mode="widthFix" src="../../images/1.png" />
+          </view>
+        </view>
+      </view>
+      <view class="btns">
+        <view class="btn cancel">不满意返工</view>
+        <view class="btn">阶段完成确认</view>
+        <!-- <view class="btn complete">已完成确认</view> -->
+      </view>
+    </view>
+  </view>

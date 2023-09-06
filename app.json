@@ -8,7 +8,9 @@
     "pages/productDetail/index",
     "pages/orderCreate/index",
     "pages/orderRemark/index",
-    "pages/orderResult/index"
+    "pages/orderResult/index",
+    "pages/dairy/index",
+    "pages/orderDetail/index"
   ],
   "tabBar": {
     "custom": false,
