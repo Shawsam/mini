@@ -1,0 +1,25 @@
+  <view class="container">
+    <view class="con">
+      <image class="avatar" src="../../images/1.png" />
+      <view class="info">
+        <view>1号客服微信号：12asdpd</view>
+        <view class="btns">
+          <view class="btn">复制微信号</view>
+          <view class="btn cancel">二维码</view>
+        </view>
+      </view>
+    </view>
+    <view class="con">
+      <image class="avatar" src="../../images/1.png" />
+      <view class="info">
+        <view>1号客服微信号：12asdpd</view>
+        <view class="btns">
+          <view class="btn">复制微信号</view>
+          <view class="btn cancel">二维码</view>
+        </view>
+      </view>
+    </view>
+    <view class="footer">
+      <view class="btn" bindtap="submit">服务热线：122-1234-5678</view>
+    </view>
+  </view>

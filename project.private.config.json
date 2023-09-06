@@ -9,6 +9,34 @@
             "list": [
                 {
                     "name": "",
+                    "pathName": "pages/addrEdit/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/contact/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/userInfo/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/protocol/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
                     "pathName": "pages/orderDetail/index",
                     "query": "",
                     "launchMode": "default",

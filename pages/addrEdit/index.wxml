@@ -1,0 +1,27 @@
+  <view class="container">
+    <view class="con">
+      <view class="addr">选择地址<view class="desp">上海<image src="../../images/arrow.png" /></view></view>
+      <view class="tit">门牌号</view>
+        <view class="input">
+        <input  />
+       </view>
+    </view>
+    <view class="con">
+       <view class="tit">联系人</view>
+       <view class="input">
+        <input  />
+       </view>
+       <view class="tit">联系电话</view>
+       <view class="input">
+        <input  />
+       </view>
+    </view>
+    <view class="con">
+        <view>设为默认地址</view>
+        <view class="tip">每次下单会使用默认服务地址</view>
+        <switch class="switch" checked bindchange="switchChange" />
+    </view>
+    <view class="footer">
+      <view class="btn" bindtap="submit">保存</view>
+    </view>
+  </view>

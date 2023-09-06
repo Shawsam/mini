@@ -1,0 +1,29 @@
+  <view class="container">
+    <view class="con">
+      <view class="flex top">
+        <view class="default flex"><image class="icon" src="../../images/user/selected.png" />设为默认</view>
+        <view class="handle flex">
+          <image class="icon" src="../../images/user/edit.png" /> 
+          <Text>|</Text>
+          <image class="icon" src="../../images/user/del.png" />
+        </view>
+      </view>
+      <view class="name"><Text>王大毛</Text><Text>15823400000</Text></view>
+      <view class="addr">上海市奉贤区恒盛湖畔豪庭西区16</view>
+    </view>
+    <view class="con">
+      <view class="flex top">
+        <view class="default flex"><image class="icon" src="../../images/user/select.png" />设为默认</view>
+        <view class="handle flex">
+          <image class="icon" src="../../images/user/edit.png" /> 
+          <Text>|</Text>
+     <image class="icon" src="../../images/user/del.png" />
+        </view>
+      </view>
+      <view class="name"><Text>王大毛</Text><Text>15823400000</Text></view>
+      <view class="addr">上海市奉贤区恒盛湖畔豪庭西区16</view>
+    </view>
+    <view class="footer">
+      <view class="btn" bindtap="submit">服务热线：122-1234-5678</view>
+    </view>
+  </view>

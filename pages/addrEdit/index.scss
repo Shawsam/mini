@@ -3,32 +3,35 @@
   box-sizing: border-box;
   padding:40rpx;
   padding-bottom: 120rpx;
-  .state{
-    text-align: center;
-    margin-top: 50rpx;
-    image{
-      width: 150rpx;
-      height: 150rpx;
-    }
-    color:#000;
-    font-weight: bold;
-    margin-bottom: 100rpx;
-    line-height: 60rpx;
-  }
   .con{
     background: #fff;
     position: relative;
     border-radius: 15rpx;
-    padding:0 40rpx;
+    padding:40rpx;
     margin-bottom:40rpx;
-    .p{
-      padding:36rpx 0;
-      border-bottom: 1px solid #eee;
+    line-height: 60rpx;
+    .input{
+      background: #F8F9FA;
+      border-radius: 15rpx;
+      padding:20rpx;
+    }
+    .addr{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40rpx;
     }
     .tit{
-      padding:46rpx 0;
-      text-align: center;
+      margin-bottom: 10rpx;
+    }
+    .tip{
       color: #666;
+      font-size: 26rpx;
+    }
+    .switch{
+      position: absolute;
+      top:40rpx;
+      right: 40rpx;
     }
   }
   .footer{

@@ -3,32 +3,41 @@
   box-sizing: border-box;
   padding:40rpx;
   padding-bottom: 120rpx;
-  .state{
-    text-align: center;
-    margin-top: 50rpx;
-    image{
-      width: 150rpx;
-      height: 150rpx;
-    }
-    color:#000;
-    font-weight: bold;
-    margin-bottom: 100rpx;
-    line-height: 60rpx;
-  }
   .con{
+    margin-bottom:40rpx;
     background: #fff;
     position: relative;
     border-radius: 15rpx;
-    padding:0 40rpx;
-    margin-bottom:40rpx;
-    .p{
-      padding:36rpx 0;
-      border-bottom: 1px solid #eee;
+    padding:40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .avatar{
+      width: 100rpx;
+      height: 100rpx;
+      border-radius: 50%;
     }
-    .tit{
-      padding:46rpx 0;
-      text-align: center;
-      color: #666;
+    .btns{
+      margin-top:40rpx;
+      text-align: right;
+      .btn{
+        display: inline-block;
+        height: 70rpx;
+        line-height: 70rpx;
+        text-align: center;
+        border-radius: 35rpx;
+        background-color: #21B579;
+        color: #fff;
+        padding:0 30rpx;
+        margin-left: 20rpx;
+      }
+      .cancel{
+        background-color: #F8F9FA;
+        color: #333;
+      }
+      .complete{
+        background-color: #ccc;
+      }
     }
   }
   .footer{

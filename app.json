@@ -10,7 +10,12 @@
     "pages/orderRemark/index",
     "pages/orderResult/index",
     "pages/dairy/index",
-    "pages/orderDetail/index"
+    "pages/orderDetail/index",
+    "pages/protocol/index",
+    "pages/addrList/index",
+    "pages/addrEdit/index",
+    "pages/contact/index",
+    "pages/userInfo/index"
   ],
   "tabBar": {
     "custom": false,

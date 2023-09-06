@@ -1,7 +1,7 @@
 
 .container{  
   box-sizing: border-box;
-  padding-bottom: 100rpx;
+  padding-bottom: 120rpx;
   .top{
     height: 380rpx;
     background: #21B579;
@@ -28,7 +28,7 @@
   .con{
     background: #fff;
     position: relative;
-    border-radius: 10rpx;
+    border-radius: 15rpx;
     padding:40rpx;
     margin-bottom:40rpx;
   }
@@ -91,7 +91,7 @@
     position: fixed;
     bottom:0;
     left:0;
-    height: 100rpx;
+    height: 120rpx;
     display: flex;
     align-items: center;
     justify-content: center;
