@@ -9,7 +9,7 @@
             "list": [
                 {
                     "name": "",
-                    "pathName": "pages/productDetail/index",
+                    "pathName": "pages/orderCreate/index",
                     "query": "",
                     "launchMode": "default",
                     "scene": null

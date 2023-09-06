@@ -5,7 +5,10 @@
     "pages/order/index",
     "pages/user/index",
     "pages/search/index",
-    "pages/productDetail/index"
+    "pages/productDetail/index",
+    "pages/orderCreate/index",
+    "pages/orderRemark/index",
+    "pages/orderResult/index"
   ],
   "tabBar": {
     "custom": false,

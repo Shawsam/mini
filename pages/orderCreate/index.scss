@@ -1,0 +1,102 @@
+
+.container{  
+  box-sizing: border-box;
+  padding:40rpx;
+  padding-bottom: 100rpx;
+  .con{
+    background: #fff;
+    position: relative;
+    border-radius: 10rpx;
+    padding:40rpx;
+    margin-bottom:40rpx;
+  }
+
+  .addr{     
+    display: flex;
+    line-height: 50rpx;
+    align-items: center;
+    justify-content: space-between;
+    .inf{
+       position: relative;
+       padding-left: 30px;
+       .location{
+         position: absolute;
+         top:0;
+         left:0;
+         width: 40rpx;
+       }
+    }
+    image{
+      height: 40rpx;
+      width: 40rpx;
+      display: inline-block;
+    } 
+    .name{
+      font-weight: bold;
+      color: #000;
+    }
+    color: #999;
+  }
+
+  .info{
+    margin-top: 30rpx;
+    image{
+      height: 150rpx;
+      width: 150rpx;
+      margin-right: 40rpx;
+    }
+    .name{
+      margin-bottom: 20rpx;
+    }
+    .tit{
+      color: #666;
+    }
+  }
+
+  .payinfo{
+    justify-content: space-between;
+    line-height: 50rpx;
+    .inf{
+      color: #666;
+      font-size: 24rpx;
+    }
+    .price{
+      margin-right: 15rpx;
+    }
+  }
+  .footer{
+    position: fixed;
+    bottom:0;
+    left:0;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 50rpx;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    .contact{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 100rpx;
+      margin-right: 40rpx;
+      image{
+        display: block;
+        height: 30rpx;
+        width: 30rpx;
+      }
+      font-size: 20rpx;
+    }
+    .btn{
+      text-align: center;
+      height: 80rpx;
+      line-height: 80rpx;
+      background: #21B579;
+      color: #fff;
+      border-radius: 40rpx;
+      flex: 1;
+    }
+  }
+}
