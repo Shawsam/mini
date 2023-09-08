@@ -1,0 +1,72 @@
+
+.container{  
+  box-sizing: border-box;
+  padding:40rpx;
+  padding-bottom: 120rpx;
+  .status{
+    background: #fff;
+    border-radius: 10rpx;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 60rpx;
+    .name{
+      font-size: 34rpx;
+    }
+    .time{
+      color: #666;
+    }
+    .state{
+      color: #F55726;
+      &.refused{
+        color: #333;
+      }
+      &.wait{
+        color: #999;
+      }
+    }
+  }
+  .con{
+    margin-bottom:40rpx;
+    background: #fff;
+    position: relative;
+    border-radius: 15rpx;
+    padding:40rpx;
+    .item{
+      margin-bottom: 30rpx;
+    }
+  }
+  .footer{
+    position: fixed;
+    bottom:0;
+    left:0;
+    height: 120rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 50rpx;
+    width: 100%;
+    box-sizing: border-box;
+    .contact{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 100rpx;
+      margin-right: 40rpx;
+      image{
+        display: block;
+        height: 30rpx;
+        width: 30rpx;
+      }
+      font-size: 20rpx;
+    }
+    .btn{
+      text-align: center;
+      height: 80rpx;
+      line-height: 80rpx;
+      background: #21B579;
+      color: #fff;
+      border-radius: 40rpx;
+      flex: 1;
+    }
+  }
+}

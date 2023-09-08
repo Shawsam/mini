@@ -1,0 +1,31 @@
+  <view class="container">
+    <view class="con">
+      <view class="status flex">
+        <view>
+          <view class="name">状态</view>
+          <view class="time">申请时间：2023/07/1612:23</view>
+        </view>
+        <view class="state">已通过</view>
+      </view>
+    </view>
+    <view class="con">
+      <view class="item">
+        <view>1.什么是京东招商团长？</view>
+        <view>京东招商团长是已开通京东联盟账号，且在站外营
+        销推广领域有一定招商选品能力，能为商家提供并
+        优化营销策略，帮助商家进行商品推广的一类推广
+        服务者。</view>
+      </view>
+      <view class="item">
+        <view>2.什么是招商活动？</view>
+        <view>招商活动是指京东联盟为招商团长提供发布活动招
+        商/选品/推广/数据效果查看的一系列服务能力。
+        团长发布招商活动后，各商家可进行商品提报，团
+        长推广后可按照一定标准收取相应的服务费，并帮
+        助商家实现单品爆单的效果目标。</view>
+      </view>
+    </view>
+    <view class="footer">
+      <view class="btn" bindtap="submit">立即申请</view>
+    </view>
+  </view>

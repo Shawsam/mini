@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+   <view class="top">
+      <Text class="name">可提现金额(元)</Text>
+      <view class="num">300.20</view>
+   </view>
+   <view class="main">
+     <view class="con">
+        <view>提现金额</view>
+        <view class="input flex">
+          <Text class="tag">￥</Text>
+          <input type="number" class="input" placeholder="满50.00元可提现" />
+          <Text class="desp price">全部提现</Text>
+        </view>
+        <view>
+          <Text class="tag">提现至</Text>
+          <view class="desp"><image class="icon" src="../../images/user/wx.png" />微信零钱</view>
+        </view>
+        <view class="btns">
+          <view class="btn">申请提现</view>
+        </view>
+      </view>
+   </view>
+</view>

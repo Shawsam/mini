@@ -31,10 +31,10 @@
           </view>
         </view>
       </view>
-      <view class="li">服务地址<Text class="desp"><image src="../../images/arrow.png" /></Text></view>
-      <view class="li">我的资料<Text class="desp"><image src="../../images/arrow.png" /></Text></view>
-      <view class="li">服务协议<Text class="desp"><image src="../../images/arrow.png" /></Text></view>
-      <view class="li">联系客服<Text class="desp"><image src="../../images/arrow.png" /></Text></view>
-      <view class="li">团长分销<Text class="desp"><image src="../../images/arrow.png" /></Text></view>
+      <view class="li" data-page="addrList" bindtap="openPage">服务地址<Text class="desp"><image src="../../images/arrow.png" /></Text></view>
+      <view class="li" data-page="userInfo" bindtap="openPage">我的资料<Text class="desp"><image src="../../images/arrow.png" /></Text></view>
+      <view class="li" data-page="protocol" bindtap="openPage">服务协议<Text class="desp"><image src="../../images/arrow.png" /></Text></view>
+      <view class="li" data-page="contact" bindtap="openPage">联系客服<Text class="desp"><image src="../../images/arrow.png" /></Text></view>
+      <view class="li" data-page="distribution" bindtap="openPage">团长分销<Text class="desp"><image src="../../images/arrow.png" /></Text></view>
    </view>
 </view>

@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="list">
+      <view class="item flex">
+        <view>
+          <view class="name">提现</view>
+          <view class="time">通过时间：2023/07/1612:23</view>
+        </view>
+        <view class="state">
+          <view class="price">￥300</view>
+          <view class="state">已通过</view>
+        </view>
+      </view>
+    </view>
+</view>

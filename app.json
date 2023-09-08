@@ -15,7 +15,13 @@
     "pages/addrList/index",
     "pages/addrEdit/index",
     "pages/contact/index",
-    "pages/userInfo/index"
+    "pages/userInfo/index",
+    "pages/distribution/index",
+    "pages/distributionApply/index",
+    "pages/distributionCash/index",
+    "pages/distributionCashRecord/index",
+    "pages/distributionFollow/index",
+    "pages/distributionMoney/index"
   ],
   "tabBar": {
     "custom": false,

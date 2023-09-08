@@ -43,5 +43,11 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  openPage(e){
+    let page = e.currentTarget.dataset.page;
+    wx.navigateTo({
+      url: `/pages/${page}/index`,
+    });
   }
 })

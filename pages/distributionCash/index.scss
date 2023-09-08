@@ -1,0 +1,61 @@
+.top{
+  background:#21B579;
+  color: #fff;
+  align-items: center;
+  padding: 100rpx 50rpx 70rpx 50rpx;
+  border-radius: 0 0 30rpx 30rpx;
+  .num{
+    margin-top:20rpx;
+    font-size: 44rpx;
+  }
+}
+
+.main{
+  padding:0 40rpx;
+  margin-top: -50rpx;
+  .con{
+    background: #fff;
+    border-radius: 15rpx;
+    padding:40rpx;
+    margin-bottom: 50rpx;
+    line-height: 60rpx;
+    .input{
+      align-items: center;
+      justify-content: space-between;
+      margin:30rpx 0;
+      border-bottom: 1px solid #eee;
+      .tag{
+        font-size: 60rpx;
+      }
+      input{
+        flex: 1;
+        padding: 0 20rpx;
+        border:none;
+        outline: none;
+      }
+    }
+    .desp .icon{
+      margin-right: 8rpx;
+      height: 40rpx;
+      width: 40rpx;
+    }
+
+  }
+}
+
+.btns{
+  margin-top:40rpx;
+  text-align: right;
+  .btn{
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    border-radius: 44rpx;
+    background-color: #21B579;
+    color: #fff;
+  }
+  .cancel{
+    background-color: #F8F9FA;
+    color: #333;
+  }
+}

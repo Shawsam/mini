@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="list">
+      <view class="item flex">
+        <view>
+          <view class="name">王明(ID:126412)</view>
+          <view class="time">通过时间：2023/07/1612:23</view>
+        </view>
+        <view class="state">已通过</view>
+      </view>
+      
+      <view class="item flex">
+        <view>
+          <view class="name">王明(ID:126412)</view>
+          <view class="time">通过时间：2023/07/1612:23</view>
+        </view>
+        <view class="state">已通过</view>
+      </view>
+
+      <view class="item flex">
+        <view>
+          <view class="name">王明(ID:126412)</view>
+          <view class="time">通过时间：2023/07/1612:23</view>
+        </view>
+        <view class="state">已通过</view>
+      </view>
+    </view>
+</view>
