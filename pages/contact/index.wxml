@@ -1,25 +1,25 @@
   <view class="container">
-    <view class="con">
-      <image class="avatar" src="../../images/1.png" />
+    <view class="con" wx:for="{{customers}}">
+      <image class="avatar" src="{{item.head_pic}}" />
       <view class="info">
-        <view>1号客服微信号：12asdpd</view>
+        <view>{{item.sname}}微信号：{{item.wx_no}}</view>
         <view class="btns">
-          <view class="btn">复制微信号</view>
-          <view class="btn cancel">二维码</view>
-        </view>
-      </view>
-    </view>
-    <view class="con">
-      <image class="avatar" src="../../images/1.png" />
-      <view class="info">
-        <view>1号客服微信号：12asdpd</view>
-        <view class="btns">
-          <view class="btn">复制微信号</view>
-          <view class="btn cancel">二维码</view>
+          <view class="btn" data-wx="{{item.wx_no}}" bindtap="onCopy">复制微信号</view>
+          <view class="btn cancel" data-img="{{item.wx_ewr}}"  data-bol="{{true}}" bindtap="onPanelShow">二维码</view>
         </view>
       </view>
     </view>
     <view class="footer">
-      <view class="btn" bindtap="submit">服务热线：122-1234-5678</view>
+      <view class="btn" bindtap="submit">服务热线：{{telphone}}</view>
+    </view>
+
+    <view class="modal" catchtouchmove="true" wx:if="{{panelShow}}">
+        <view class="shade"></view>
+        <view class="panel">
+            <image class="close" src="../../images/close.png" data-bol="{{false}}" bindtap="onPanelShow" />
+            <view class="content">
+               <image mode="widthFix" class="bg" src="{{codeImg}}" />
+            </view>
+        </view>
     </view>
   </view>

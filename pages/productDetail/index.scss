@@ -59,7 +59,6 @@
 }
 
 .intro{
-  padding:0 30rpx;
   background: #fff;
   .tabs{
     padding:20rpx 0;
@@ -74,6 +73,10 @@
   }
   image{
     border-radius: 20rpx;
+  }
+  .imgs{
+    padding:15rpx 30rpx;
+    background: #F8F9FA;
   }
 }
 
@@ -124,6 +127,39 @@
       .price{
         font-size: 40rpx;
       }
+    }
+  }
+}
+
+.list{
+  margin:0 -15rpx;
+  .item{
+    display: inline-block;
+    width: 50%;
+    padding:15rpx;
+    box-sizing: border-box;
+    line-height: 50rpx;
+    position: relative;
+    .con{
+      background: #fff;
+      padding:30rpx 15rpx;
+      border-radius: 10rpx;
+    }
+    image{
+      width:100%;
+    }
+    .name{
+      margin-bottom:10px;
+    }
+    .price{
+      color:#F55726;
+    }
+    .cart{
+      height:60rpx;
+      width: 60rpx;
+      position:absolute;
+      bottom:40rpx;
+      right:30rpx;
     }
   }
 }

@@ -1,33 +1,49 @@
 <view class="container">
-    <image class="banner" mode="widthFix" src="../../images/ban.png" />
+    <view class="productImg">
+      <image class="banner" mode="widthFix" src="{{info.imgList[0]}}" />
+      <image class="share" mode="widthFix" src="../../images/share.png" />
+    </view>
     <view class="info">
         <view class="flex">
-            <view><Text class="price"> ￥60 </Text>/起 <Text class="del">￥80</Text> </view>
-            <view>已服务100户</view>
+            <view><Text class="price"> ￥{{info.price}} </Text>/起 <Text class="del">￥{{info.original_price}}</Text> </view>
+            <view>已服务{{info.serviceCount}}户</view>
         </view>
         <view class="p">竣工保修</view>
-        <view class="p">施工后延长保修日期，居住更安心</view>
+        <!-- <view class="p">水电布线瓷砖补漆</view> -->
         <view><Text class="tag">金牌服务</Text> 质量保证售后无忧</view>
     </view>
     <view class="select"  data-bol="{{true}}" bindtap="filterShow">
-       已选<Text class="text">金牌服务，3个月</Text>
+       已选<Text class="text">金牌服务，泥瓦，砖墙</Text>
       <Text class="desp"><image src="../../images/arrow.png" /></Text>
     </view>
     <view class="intro">
        <view class="tabs flex">
-          <view class="item active">服务详情</view>
-          <view class="item">热门户型</view>
+          <view class="item {{ activeTab == 1?'active':''}}" data-tab="1" bindtap="switchTab">服务详情</view>
+          <view class="item {{ activeTab == 2?'active':''}}"  data-tab="2" bindtap="switchTab">热门户型</view>
        </view>
-       <view class="imgs">
-          <image class="banner" mode="widthFix" src="../../images/intro.png" />
+       <view class="imgs" wx:if="{{activeTab==1}}">
+          <rich-text nodes="{{info.prodesc}}"></rich-text>
        </view>
+
+        <view class="imgs" wx:else>
+           <view class="list"> 
+                <view class="item" wx:for="{{list}}">
+                    <view class="con" bindtap="openDetail">
+                        <image mode="widthFix" src="{{item.imgList[0]}}"></image>
+                        <view class="name">{{item.pro_name}}</view>
+                        <view><Text class="price">￥{{item.price}}</Text> /起</view>
+                        <image class="cart" src="../../images/cart.png" />
+                    </view>
+                </view>
+            </view>
+        </view>
     </view>
     <View class="footer">
-      <view class="contact">
+      <view class="contact" bindtap="openContact">
          <image src="../../images/contact.png" />
          <view>联系客服</view>
       </view>
-      <view class="btn">立即购买</view>
+      <view class="btn" bindtap="buyConfirm">立即购买</view>
     </View>
 
     
@@ -39,13 +55,14 @@
                 <view class="title">选择规格</view>
             </view>
             <view class="content">
-                <view class="title">保修时间</view>
+                <view class="title">服务项目(多选)</view>
                 <view class="opts">
-                    <view class="opt active">3个月</view>
-                    <view class="opt">6个月</view>
-                    <view class="opt">9个月</view>
-                    <view class="opt">12个月</view>
-                    <view class="opt">24个月</view>
+                    <view class="opt active">水电</view>
+                    <view class="opt">贴瓷砖</view>
+                    <view class="opt">玻璃安装</view>
+                    <view class="opt">漏水处理</view>
+                    <view class="opt">地板维修</view>
+                    <view class="opt">重新布线</view>
                 </view>          
 
                 <view class="title">服务等级</view>

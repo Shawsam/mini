@@ -1,8 +1,10 @@
 .container{
-  padding:0 30rpx;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100rpx);
   .top{
     display: flex;
-    padding:30rpx 0;
+    padding:30rpx;
     line-height: 70rpx;
     height: 70rpx;
     .addr{
@@ -37,7 +39,12 @@
       }
     }
   }
-
+  
+  .main{
+    overflow-y: scroll;
+    flex: 1;
+    padding:0 30rpx;
+  }
 
   .swiper{
     margin-bottom: 30rpx;
@@ -66,6 +73,9 @@
       flex: 1;
       display: flex;
       justify-content: space-around;
+      .desp{
+        font-size:28rpx;
+      }
     }
   }
 

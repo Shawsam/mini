@@ -17,6 +17,10 @@
       height: 100rpx;
       border-radius: 50%;
     }
+    .info{
+      flex: 1;
+      padding-left:40px;
+    }
     .btns{
       margin-top:40rpx;
       text-align: right;
@@ -74,4 +78,14 @@
       flex: 1;
     }
   }
+}
+
+.panel .content{
+  padding:80rpx 0;
+  .bg{
+    width: 400rpx;
+    height: 400rpx;
+    margin:0 auto;
+    display: block;
+ }
 }

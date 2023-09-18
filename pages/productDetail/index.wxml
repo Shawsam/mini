@@ -1,15 +1,15 @@
 <view class="container">
     <view class="productImg">
-      <image class="banner" mode="widthFix" src="../../images/1.png" />
+      <image class="banner" mode="widthFix" src="{{info.imgList[0]}}" />
       <image class="share" mode="widthFix" src="../../images/share.png" />
     </view>
     <view class="info">
         <view class="flex">
-            <view><Text class="price"> ￥60 </Text>/起 <Text class="del">￥80</Text> </view>
-            <view>已服务100户</view>
+            <view><Text class="price"> ￥{{info.price}} </Text>/起 <Text class="del">￥{{info.original_price}}</Text> </view>
+            <view>已服务{{info.serviceCount}}户</view>
         </view>
-        <view class="p">奉贤阳光社区四室三厅150㎡户型</view>
-        <view class="p">水电布线瓷砖补漆</view>
+        <view class="p">{{ info.pro_name }}</view>
+        <!-- <view class="p">水电布线瓷砖补漆</view> -->
         <view><Text class="tag">金牌服务</Text> 质量保证售后无忧</view>
     </view>
     <view class="select"  data-bol="{{true}}" bindtap="filterShow">
@@ -18,19 +18,32 @@
     </view>
     <view class="intro">
        <view class="tabs flex">
-          <view class="item active">服务详情</view>
-          <view class="item">热门户型</view>
+          <view class="item {{ activeTab == 1?'active':''}}" data-tab="1" bindtap="switchTab">服务详情</view>
+          <view class="item {{ activeTab == 2?'active':''}}"  data-tab="2" bindtap="switchTab">热门户型</view>
        </view>
-       <view class="imgs">
-          <image class="banner" mode="widthFix" src="../../images/intro.png" />
+       <view class="imgs" wx:if="{{activeTab==1}}">
+          <rich-text nodes="{{info.prodesc}}"></rich-text>
        </view>
+
+        <view class="imgs" wx:else>
+           <view class="list"> 
+                <view class="item" wx:for="{{list}}">
+                    <view class="con" bindtap="openDetail">
+                        <image mode="widthFix" src="{{item.imgList[0]}}"></image>
+                        <view class="name">{{item.pro_name}}</view>
+                        <view><Text class="price">￥{{item.price}}</Text> /起</view>
+                        <image class="cart" src="../../images/cart.png" />
+                    </view>
+                </view>
+            </view>
+        </view>
     </view>
     <View class="footer">
-      <view class="contact">
+      <view class="contact" bindtap="openContact">
          <image src="../../images/contact.png" />
          <view>联系客服</view>
       </view>
-      <view class="btn">立即购买</view>
+      <view class="btn" bindtap="buyConfirm">立即购买</view>
     </View>
 
     
