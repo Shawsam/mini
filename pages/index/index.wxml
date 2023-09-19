@@ -1,6 +1,6 @@
 <view class="container">
     <view class="top">
-        <view class="addr"> <image class="img" mode="widthFix" src="../../images/addr.png" />天心区唐家湾巷39号</view>
+        <view class="addr"> <image class="img" mode="widthFix" src="../../images/addr.png" />{{addr}}</view>
         <view class="search" bindtap="openSearch">
             <image class="img" mode="widthFix" src="../../images/search.png" />
             <text>请输入搜索内容</text>
@@ -10,15 +10,15 @@
         <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
             <block wx:for="{{imageUrls}}">
                 <swiper-item>
-                <image src="{{item}}" class="swiper-image"></image>
+                <image src="{{item.shuff_img}}" class="swiper-image"></image>
                 </swiper-item>
             </block>
         </swiper>
-        <view class="tip">
+        <view class="tip" wx-if="{{notice}}">
             <image class="img" mode="widthFix" src="../../images/msg.png" />
             <view class="info">
-                <view>服务范围仅支持奉贤区</view>
-                <view class="desp">一个月前</view>
+                <view>{{notice.title}}</view>
+                <view class="desp">{{notice.create_time.substr(0,10)}}</view>
             </view>
         </view>
         <view class="filter">
@@ -67,10 +67,10 @@
             </view>
             <view class="content">
                 <view class="item">
-                    城市<Text class="desp">上海</Text>
+                    城市<Text class="desp">{{ address_component.city }}</Text>
                 </view>
                 <view class="item">
-                    地区/镇<Text class="desp">奉贤</Text>
+                    地区/镇<Text class="desp">{{ address_component.district }}</Text>
                 </view>
                 <view class="item">
                     地址<Text class="desp"><input placeholder="详情填写*" /></Text>
@@ -80,7 +80,7 @@
                 </view>            
             </view>
             <view class="foot">
-                <view class="btn">确认</view>
+                <view class="btn"  data-bol="{{false}}" bindtap="filterShow">确认</view>
             </view>
         </view>
     </view>

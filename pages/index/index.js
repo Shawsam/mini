@@ -1,9 +1,11 @@
-const app = getApp()
+const app = getApp();
+var qqmapsdk, QQMapWX = require('../../utils/qqmap-wx-jssdk.min');
 import API from '../../service/api/common'
 import API_PRO from '../../service/api/product'
 
 Page({
   data: {
+    addr:'',
     activeTab:1,
     activeRoom:1,
     activeArea:1,
@@ -17,9 +19,19 @@ Page({
     ] // 图片链接数组
   },
   onLoad() {
+    qqmapsdk = new QQMapWX({
+        key: 'FZ5BZ-NODR4-SRCUG-DP2R7-SS5B7-AYBHN'
+    });   
+    
+    API.getBanners().then(res=>{
+      this.setData({
+        imageUrls: res,
+      })
+    })
+
     API.getNotice({limit:1}).then(res => {
       this.setData({
-        content: res,
+        notice: res[0],
       })
     })
 
@@ -28,6 +40,29 @@ Page({
         list: res,
       })
     })
+  },
+  onShow(){
+    // wx.getLocation({
+    //   type: 'wgs84',
+    //   altitude: false,
+    //   success: (result) => {
+    //     console.log(result)
+    //   },
+    //   fail: () => {},
+    //   complete: () => {}
+    // });
+    qqmapsdk.reverseGeocoder({
+        // location: {
+        //   latitude: 39.984060,
+        //   longitude: 116.307520
+        // },
+        success:(res)=> {//成功后的回调
+            this.setData({
+              addr:res.result.address,
+              address_component:res.result.address_component,
+            });
+        }
+      })
   },
   filterShow(e){
     this.setData({

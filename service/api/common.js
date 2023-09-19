@@ -1,6 +1,9 @@
 import http from '../http';
 
 export default {
+  getBanners(params) {
+    return http.get('/common/getAdvs', params);
+  },
   getArea(params) {
     return http.get('/common/area', params);
   },
