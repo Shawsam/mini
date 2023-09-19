@@ -1,15 +1,15 @@
   <view class="container">
     <view class="con">
-      <view class="p">
-        头像<view class="desp"><image class="avatar"  src="../../images/1.png" /><image  src="../../images/arrow.png" /></view>
+      <view class="p" bindtap="avatarEdit">
+        头像<view class="desp"><image class="avatar"  src="{{'http://fit.jmlson.com/themes/temp/'+avatar}}" /><image  src="../../images/arrow.png" /></view>
       </view>
       <view class="p">
         昵称
-        <view class="desp">王大猫</view>
+        <view class="desp"><input placeholder="请输入昵称" value="{{ nickname }}" bindinput="nameInput" /></view>
       </view>
       <view class="p">
-        ID
-        <view class="desp">123456</view>
+        手机号
+        <view class="desp">{{phone}}</view>
       </view>
     </view>
     <view class="footer">

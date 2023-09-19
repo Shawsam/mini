@@ -1,5 +1,5 @@
 const app = getApp()
-import API from '../../service/api/user'
+import API from '../../service/api/index'
 
 Page({
   data: {

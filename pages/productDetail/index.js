@@ -1,5 +1,4 @@
-import API_PRO from '../../service/api/product'
-import API from '../../service/api/order'
+import API from '../../service/api/index'
 const app = getApp()
 
 Page({
@@ -10,14 +9,14 @@ Page({
     list:[]
   },
   onLoad() {
-    API_PRO.productDetail({
+    API.productDetail({
       proId:6
     }).then(res => {
       this.setData({
         info:res
       })
     })
-    API_PRO.productRelate({
+    API.productRelate({
       userId:1
     }).then(res=>{
       this.setData({

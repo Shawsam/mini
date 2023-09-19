@@ -1,5 +1,5 @@
   <view class="container">
-    <view class="con">
+    <!-- <view class="con">
       <view class="status flex">
         <view>
           <view class="name">状态</view>
@@ -7,7 +7,7 @@
         </view>
         <view class="state">已通过</view>
       </view>
-    </view>
+    </view> -->
     <view class="con">
       <view class="item">
         <view>1.什么是京东招商团长？</view>

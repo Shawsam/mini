@@ -17,7 +17,7 @@
           <view class="desp"><image class="icon" src="../../images/user/wx.png" />微信零钱</view>
         </view>
         <view class="btns">
-          <view class="btn">申请提现</view>
+          <view class="btn" bindtap="apply">申请提现</view>
         </view>
       </view>
    </view>

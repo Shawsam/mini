@@ -63,6 +63,7 @@
       justify-content: space-around;
       font-size: 28rpx;
       color: #333;
+      text-align: center;
       image{
         display: inline-block;
         height: 80rpx;
@@ -97,8 +98,17 @@
   .content{
     padding:0 80rpx!important;
     text-align: center;
+    position: relative;
     .bg{
       width: 600rpx;
+    }
+    .code{
+      width: 250rpx;
+      height: 250rpx;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-190rpx);
     }
   }
   .bottom{

@@ -15,7 +15,7 @@
     </view>
     <view class="list" wx:if="{{true}}">
       <!-- 订单列表 -->
-      <view class="item">
+      <view class="item" bindtap="openDetail">
         <view class="top">
           <Text class="no">订单号：12345678910</Text>
           <Text class="price">待分配</Text>
@@ -38,7 +38,7 @@
           </view>
       </view>
 
-      <view class="item">
+      <view class="item" bindtap="openDetail">
         <view class="top">
           <Text class="no">订单号：12345678910</Text>
           <Text class="price">待分配</Text>

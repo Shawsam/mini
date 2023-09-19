@@ -16,7 +16,7 @@
             <view>可提现(元)</view>
             <view class="price">300</view>
           </view>
-          <view class="flex right">提现记录<image class="icon" src="../../images/arrow.png" /></view>
+          <view class="flex right" data-page="distributionCashRecord" bindtap="openPage">提现记录<image class="icon" src="../../images/arrow.png" /></view>
         </view>
         <view class="list flex">
           <view class="item">
@@ -33,26 +33,26 @@
           </view>
         </view>
         <view class="btns">
-          <view class="btn">立即提现</view>
+          <view class="btn" data-page="distributionCash" bindtap="openPage">立即提现</view>
           <!-- <view class="btn">成为团长</view>
           <view class="btn cancel">审核中</view> -->
         </view>
       </view>
       <view class="con">
         <view class="flex  items">
-          <view class="item">
+          <view class="item"  data-page="distributionApply" bindtap="openPage">
             <image src="../../images/distribution/1.png" />
             <view>成为团长</view>
           </view>
-          <view class="item">
+          <view class="item" data-page="distributionFollow" data-bol="{{true}}" bindtap="filterShow">
             <image src="../../images/distribution/2.png" />
             <view>邀请团长</view>
           </view>
-          <view class="item">
+          <view class="item" data-page="distributionFollow" bindtap="openPage">
             <image src="../../images/distribution/3.png" />
             <view>下线明细</view>
           </view>
-          <view class="item">
+          <view class="item" data-page="distributionMoney" bindtap="openPage">
             <image src="../../images/distribution/4.png" />
             <view>累计佣金</view>
           </view>
@@ -60,11 +60,12 @@
       </view>
    </view>
 
-   <view class="modal" catchtouchmove="true" wx:if="{{false}}">
+    <view class="modal" catchtouchmove="true" wx:if="{{panelShow}}">
         <view class="shade"></view>
         <view class="panel">
             <view class="content">
                <image mode="widthFix" class="bg" src="../../images/user/bg.png" />
+               <image mode="widthFix" class="code" src="../../images/user/code.png" />
             </view>
             <view class="bottom">
                <view class="items">
@@ -73,7 +74,7 @@
                     <view>微信</view>
                   </view>
                 </view>
-                <view class="btn">取消分享</view>
+                <view class="btn" data-bol="{{false}}" bindtap="filterShow">取消分享</view>
             </view>
         </view>
     </view>

@@ -10,6 +10,13 @@
             "list": [
                 {
                     "name": "",
+                    "pathName": "pages/addrList/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
                     "pathName": "pages/distributionCash/index",
                     "query": "",
                     "launchMode": "default",

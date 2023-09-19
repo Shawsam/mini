@@ -1,7 +1,6 @@
 const app = getApp();
 var qqmapsdk, QQMapWX = require('../../utils/qqmap-wx-jssdk.min');
-import API from '../../service/api/common'
-import API_PRO from '../../service/api/product'
+import API from '../../service/api/index'
 
 Page({
   data: {
@@ -35,7 +34,7 @@ Page({
       })
     })
 
-    API_PRO.productSearch().then(res => {
+    API.productSearch().then(res => {
       this.setData({
         list: res,
       })

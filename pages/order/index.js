@@ -4,11 +4,15 @@ Page({
   data: {
   },
   bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+
   },
   onLoad() {
 
   },
+  openDetail(){
+    wx.navigateTo({
+      url: '/pages/orderDetail/index'
+    });
+      
+  }
 })

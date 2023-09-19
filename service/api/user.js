@@ -18,5 +18,8 @@ export default {
   },
   updateAddr(params){
     return http.post('/fit/updateAddr', params);
+  },
+  deleteAddr(params){
+    return http.post('/fit/deleteAddr', params);
   }
 };

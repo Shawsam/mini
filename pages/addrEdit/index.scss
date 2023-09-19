@@ -17,9 +17,13 @@
     }
     .addr{
       display: flex;
-      align-items: center;
       justify-content: space-between;
       margin-bottom: 40rpx;
+      position: relative;
+    }
+    .desp{
+      position: absolute;
+      right: 0;
     }
     .tit{
       margin-bottom: 10rpx;
